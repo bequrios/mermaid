@@ -12,39 +12,15 @@
         shortName: 'respec-mermaid',
         doJsonLd: true,
         includePermalinks: false,
-        editors: [
-          { name: "Manu Sporny", url: "https://www.linkedin.com/in/manusporny/",
-            company: "Digital Bazaar", companyURL: "http://digitalbazaar.com/"}
-        ],
-        authors:
-        [
-          { name: "Manu Sporny", url: "http://digitalbazaar.com/",
-            company: "Digital Bazaar", companyURL: "http://digitalbazaar.com/"}
-        ],
         maxTocLevel: 2,
         inlineCSS: true,
         preProcess: [window.respecMermaid.createFigures]
       };
     </script>
-    <style>
-pre .comment {
-  font-weight: bold;
-  color: SteelBlue;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-    </style>
   </head>
   <body>
-    <section id="abstract">
-      <p>Hello respec-mermaid!</p>
-    </section>
-
     <section>
       <h1>Examples</h1>
-
       <figure>
   <pre class="diagram mermaid">
 flowchart TD
@@ -61,53 +37,6 @@ flowchart TD
   </pre>
   <figcaption>Use of prov:Entity to create an affair identifier.</figcaption>
 </figure>
-      
-      <p>Here is a mermaid example:</p>
-      <figure>
-        <pre class="mermaid">
-sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
-        </pre>
-        <figcaption>A sequence diagram example</figcaption>
-      </figure>
-
-      <figure>
-        <pre class="mermaid">
-graph TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
-        </pre>
-        <figcaption>A flow chart example</figcaption>
-      </figure>
-
-      <figure>
-        <pre class="mermaid">
-stateDiagram-v2
-    [*] --> Still
-    Still --> [*]
-    Still --> Moving
-    Moving --> Still
-    Moving --> Crash
-    Crash --> [*]
-        </pre>
-        <figcaption>A state diagram example</figcaption>
-      </figure>
-
-      <figure>
-        <pre class="mermaid">
-pie title Pets adopted by volunteers
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 15
-        </pre>
-        <figcaption>A pie chart example</figcaption>
-      </figure>
-
     </section>
   </body>
 </html>
