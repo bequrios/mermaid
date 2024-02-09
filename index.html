@@ -8,17 +8,26 @@
     <script type="text/javascript" class="remove">
       var respecConfig = {
         specStatus: "unofficial",
-        subtitle: "Test of ReSpec Mermaid",
+        subtitle: "Test of ReSpec Mermaid with Markdown",
         shortName: 'respec-mermaid',
         doJsonLd: true,
         includePermalinks: false,
         maxTocLevel: 2,
         inlineCSS: true,
-        preProcess: [window.respecMermaid.createFigures]
+        preProcess: [window.respecMermaid.createFigures],
+        editors: [
+          {
+            name: "Benedikt Hitz-Gamper",
+            company: "Bern University of Applied Sciences (BFH)",
+            companyURL: "https://www.bfh.ch",
+            url: "mailto:benedikt.hitz@bfh.ch",
+          }
+        ]
       };
     </script>
   </head>
   <body>
+    <section id="abstract">Abstract</section>
     <section>
       <h1>Examples</h1>
       <figure>
