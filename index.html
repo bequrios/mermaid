@@ -14,11 +14,20 @@
         includePermalinks: false,
         maxTocLevel: 2,
         inlineCSS: true,
-        preProcess: [window.respecMermaid.createFigures]
+        preProcess: [window.respecMermaid.createFigures],
+        editors: [
+          {
+            name: "Benedikt Hitz-Gamper",
+            company: "Bern University of Applied Sciences (BFH)",
+            companyURL: "https://www.bfh.ch",
+            url: "mailto:benedikt.hitz@bfh.ch",
+          }
+        ]
       };
     </script>
   </head>
   <body>
+    <section id='abstract'><h1>Abstract</h1></section>
     <section id='examples' data-include-format="markdown" data-include="documentation/ex.md"></section>
   </body>
 </html>
